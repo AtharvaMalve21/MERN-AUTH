@@ -49,8 +49,8 @@ const Login = () => {
   };
 
   return (
-    <div onClick={() => navigate("/")} className='flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-200 to-purple-400 relative' >
-      <img src={assets.logo} className='absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer' alt="Logo" />
+    <div className='flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-200 to-purple-400 relative' >
+      <img onClick={() => navigate("/")} src={assets.logo} className='absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer' alt="Logo" />
       <div className='bg-slate-900 p-10 sm:p-12 rounded-3xl shadow-2xl w-full sm:w-96 text-indigo-300 text-sm'>
         <h2 className='text-3xl font-bold text-white text-center mb-2 tracking-tight'>Welcome Back</h2>
         <p className='text-center text-sm text-indigo-400 mb-6'>Login to your account!</p>
