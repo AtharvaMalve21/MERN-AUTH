@@ -17,16 +17,11 @@ const App = () => {
       <Route path='/' element={<Home />} />
       <Route path='/register' element={user ? <Navigate to={'/'} /> : <Register />} />
       <Route path='/login' element={user ? <Navigate to={'/'} /> : <Login />} />
-      <Route path='/email-verify' element={<EmailVerify />} />
+      <Route path='/email-verify' element={user?.isAccountVerified ? <Navigate to="/" /> : <EmailVerify />} />
       <Route path='/reset-password' element={<ResetPassword />} />
-
       {/* Not Found Page  */}
-
       <Route path='*' element={<NotFound />} />
     </Routes>
-
-
-
   )
 }
 
