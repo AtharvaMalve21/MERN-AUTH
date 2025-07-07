@@ -47,10 +47,8 @@ const Register = () => {
         }
     };
 
-    const sendResetPasswordOTP = () => toast.success("OTP is sent!");
-
     return (
-        <div className='flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-200 to-purple-400 relative' >
+        <div onClick={() => navigate("/")} className='flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-200 to-purple-400 relative' >
             <img src={assets.logo} className='absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer' alt="Logo" />
             <div className='bg-slate-900 p-10 sm:p-12 rounded-3xl shadow-2xl w-full sm:w-96 text-indigo-300 text-sm'>
                 <h2 className='text-3xl font-bold text-white text-center mb-2 tracking-tight'>Create Account</h2>
