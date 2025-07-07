@@ -36,6 +36,7 @@ const Login = () => {
         withCredentials: true
       });
 
+      console.log(URI);
       if (data.success) {
         setIsLoggedIn(true);
         toast.success(data.message);
